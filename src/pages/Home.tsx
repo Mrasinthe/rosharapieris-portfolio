@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
-import backgroundImage from "../assets/background.jpg";
 
 const Home: React.FC = () => {
   const [animationClass, setAnimationClass] = useState<string>("");

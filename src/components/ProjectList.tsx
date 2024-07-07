@@ -9,8 +9,8 @@ interface ProjectListProps {
 const ProjectList: React.FC<ProjectListProps> = ({ searchTerm }) => {
   const filteredProjects = initialProjects.filter(
     (project) =>
-      project.name.toLowerCase().includes(searchTerm) ||
-      project.description.toLowerCase().includes(searchTerm)
+      project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      project.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (

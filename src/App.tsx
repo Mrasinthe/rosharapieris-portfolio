@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");

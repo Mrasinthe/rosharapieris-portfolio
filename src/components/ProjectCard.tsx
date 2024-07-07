@@ -12,6 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <Container className="project-card mb-4">
       <Row>
         <Col
+          xs={12}
           md={6}
           className={
             project.video
@@ -38,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </Carousel>
           )}
         </Col>
-        <Col md={6} className="project-description">
+        <Col xs={12} md={6} className="project-description">
           <h2>{project.name}</h2>
           <p>{project.description}</p>
         </Col>

@@ -1,5 +1,5 @@
 .home-container {
-  background-image: url('../assets/background.jpg'); /* Ensure the path is correct */
+  background-image: url('../assets/background.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -9,6 +9,7 @@
   position: relative;
   color: white;
   text-align: center;
+  padding: 0 10px; /* Add padding to prevent text from touching screen edges */
 }
 
 .overlay {
@@ -17,14 +18,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .home-content {
-  z-index: 1; /* Ensure the content is above the overlay */
+  z-index: 1;
 }
 
 .home-title {
@@ -32,13 +33,17 @@
   font-weight: bold;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  word-wrap: break-word; /* Ensure words wrap to the next line */
+  overflow-wrap: break-word; /* Handle long words or URLs */
+  word-break: keep-all; /* Prevent words from breaking at arbitrary points */
+  hyphens: auto; /* Enable hyphenation if necessary */
 }
 
 .animated-char {
   display: inline-block;
   opacity: 0;
   transform: scale(0.8) translateY(-30px);
-  color: #d4af37; /* Gold color */
+  color: #d4af37;
 }
 
 .start-animation .animated-char {
@@ -54,16 +59,25 @@
 
 @keyframes elegantColorTransition {
   0%, 100% {
-    color: #efbb73; /* Gold */
+    color: #efbb73;
   }
   25% {
-    color: #c0c0c0; /* Silver */
+    color: #c0c0c0;
   }
   50% {
-    color: #ffffff; /* White */
+    color: #ffffff;
   }
-  /* 75% {
-    color: #b87333; /* Copper  
-  } */
- 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-title {
+    font-size: 2rem;
+  }
 }
