@@ -1,0 +1,69 @@
+.home-container {
+  background-image: url('../assets/background.jpg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  z-index: 1; /* Ensure the content is above the overlay */
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.animated-char {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.8) translateY(-30px);
+  color: #d4af37; /* Gold color */
+}
+
+.start-animation .animated-char {
+  animation: fadeInUp 0.8s forwards, elegantColorTransition 5s infinite;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes elegantColorTransition {
+  0%, 100% {
+    color: #efbb73; /* Gold */
+  }
+  25% {
+    color: #c0c0c0; /* Silver */
+  }
+  50% {
+    color: #ffffff; /* White */
+  }
+  /* 75% {
+    color: #b87333; /* Copper  
+  } */
+ 
+}

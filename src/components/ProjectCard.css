@@ -1,0 +1,33 @@
+.project-card {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project-image {
+  height: 400px; /* Set a fixed height for the images */
+  object-fit:cover; /*Ensure images cover the area without distorting */
+  border-radius: 8px;
+  width: 400px; 
+}
+
+/* .project-image-container {
+  height: 300px; /* Set a fixed height for image container } */
+
+
+.project-video-container {
+  height: 400px; /* Set a fixed height for video container */
+}
+
+.project-video {
+  height: 400px;
+  object-fit: cover; /* Ensure media covers the area without distorting */
+  border-radius: 8px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
