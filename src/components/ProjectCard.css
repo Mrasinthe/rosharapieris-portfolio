@@ -1,8 +1,20 @@
 .project-card {
-  background-color: black;
+  /* background-color: rgb(203, 171, 171);
   color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 8px; */
+  background-color: #2A2A2A;
+  border: 1px solid #D4AF37;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(212, 175, 55, 0.3);
+  padding: 20px;
+}
+.project-card h2 {
+  color: #F5F5F5;
+}
+
+.project-card p {
+  color: #C0C0C0;
 }
 
 .project-image,
@@ -23,6 +35,32 @@
   flex-direction: column;
   justify-content: center;
 }
+/* 
+.btn-primary {
+  background-color: #e1d4a7; /* Gold color 
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+} */
+/* 
+.btn-primary:hover {
+  background-color: #c28787; /* Darker gold 
+} */
+
+.btn-primary {
+  background-color: #D4AF37;
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #B8860B;
+}
+
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {

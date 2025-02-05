@@ -42,6 +42,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <Col xs={12} md={6} className="project-description">
           <h2>{project.name}</h2>
           <p>{project.description}</p>
+
+            {/* Display Download Button Only If PDF Exists */}
+            {project.pdf && (
+            <a href={project.pdf} download className="btn btn-primary mt-3">
+              Download PDF
+            </a>
+          )}
         </Col>
       </Row>
     </Container>
